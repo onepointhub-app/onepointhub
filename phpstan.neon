@@ -11,6 +11,11 @@ parameters:
         - app/Modules/*/Routes/*
         - app/Modules/*/Database/*
 
+    ignoreErrors:
+        -
+            identifier: expr.resultUnused
+            path: app/Modules/Core/Resources/Views/
+
     databaseMigrationsPath:
         - app/Modules/*/Database/Migrations/
 

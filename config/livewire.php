@@ -32,8 +32,7 @@ return [
     'component_namespaces' => [
         'layouts' => app_path('Modules/Core/Resources/Views/Layouts'),
         'pages' => resource_path('views/pages'),
-        'core' => app_path('Modules/Core/Resources/Views'),
-        'core::pages' => app_path('Modules/Core/Resources/Views/Pages'),
+        'core' => app_path('Modules/Core/Resources/Views/Pages'),
     ],
 
     /*

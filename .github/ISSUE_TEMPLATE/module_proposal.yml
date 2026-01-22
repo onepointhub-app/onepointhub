@@ -1,0 +1,56 @@
+name: "Module Proposal"
+description: Propose a new module for OnePointHub
+labels: [module]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Modules are first-class citizens in OnePointHub. Please provide as much detail as possible.
+
+  - type: input
+    id: name
+    attributes:
+      label: Module Name
+      placeholder: e.g. Invoicing
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does this module do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: users
+    attributes:
+      label: Target Users
+      description: Who benefits from this module?
+
+  - type: textarea
+    id: features
+    attributes:
+      label: Core Features
+      description: Bullet list of main features
+
+  - type: textarea
+    id: permissions
+    attributes:
+      label: Permissions
+      description: What permissions would this module define?
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Core or other modules this depends on
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution Intent
+      options:
+        - label: I plan to implement this module
+        - label: I am looking for someone else to implement this

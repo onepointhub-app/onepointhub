@@ -1,0 +1,23 @@
+name: "Maintenance / Refactor"
+description: Internal improvements, refactors, or cleanup
+labels: [maintenance]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be improved or refactored?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this change necessary?
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What parts of the system are affected?

@@ -1,0 +1,22 @@
+name: "Support / Question"
+description: Ask a question or request help
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please note: GitHub Issues are not a replacement for documentation.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What do you need help with?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What have you tried so far?
